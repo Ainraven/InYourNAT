@@ -20,16 +20,11 @@ export function activate(context: vscode.ExtensionContext) {
 }
 
 const FACES = [
-  {minErrors: 0, asset: "1.webp", sound: "mr-incredible-uncanny-1.mp3"},
-  {minErrors: 1, asset: "2.webp", sound: "mr-incredible-uncanny-2.mp3"},
-  {minErrors: 5, asset: "3.webp", sound: "mr-incredible-uncanny-3.mp3"},
-  {minErrors: 10, asset: "4.webp", sound: "mr-incredible-uncanny-4.mp3"},
-  {minErrors: 15, asset: "5.webp", sound: "mr-incredible-uncanny-5.mp3"},
-  {minErrors: 20, asset: "6.webp", sound: "mr-incredible-uncanny-6.mp3"},
-  {minErrors: 25, asset: "7.png"/* don't ask */, sound: "mr-incredible-uncanny-7.mp3"},
-  {minErrors: 30, asset: "8.webp", sound: "mr-incredible-uncanny-8.mp3"},
-  {minErrors: 35, asset: "9.webp", sound: "mr-incredible-uncanny-9.mp3"},
-  {minErrors: 40, asset: "10.webp", sound: "mr-incredible-uncanny-10.mp3"},
+  {minErrors: 0, asset: "lvl0.png", sound: "mr-incredible-uncanny-1.mp3"},
+  {minErrors: 3, asset: "lvl1.png", sound: "mr-incredible-uncanny-2.mp3"},
+  {minErrors: 5, asset: "lvl2.png", sound: "mr-incredible-uncanny-3.mp3"},
+  {minErrors: 10, asset: "lvl3.png", sound: "mr-incredible-uncanny-4.mp3"},
+  {minErrors: 20, asset: "lvl4.png", sound: "mr-incredible-uncanny-5.mp3"},
 ].reverse();
 
 type Face = (typeof FACES)[0];
